@@ -3,13 +3,13 @@
 #------------------------------------------------------------
 
 # Which carpentry is this ("swc", "dc", or "lc")?
-carpentry: "dc"
+carpentry: "lc"
 
 # Overall title for pages.
-title: "Increase Researchers Digital Literacy"
+title: "Sustainable Training and Education Program (STEP) in Ethiopia"
 
 # Contact email address.
-email:  mesfin.diro@aau.edu.et 
+email:  dagim.yoseph@aau.edu.et 
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
