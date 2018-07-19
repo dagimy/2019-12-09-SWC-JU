@@ -14,7 +14,7 @@ enddate: 2018-07-27 ##       # machine-readable end date for the workshop in YYY
 instructor: ["Erika Mias", "Yonas Demissew", "Mesfin Diro","Dagim Yoseph"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Habtamu Kebede","Emamu Abdela"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: ["dagim.yoseph@aau.edu.et", "mesfin.diro@aau.edu.et","yoyoman2200@gmail.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  pad.software-carpentry.org/2018-07-25-LC-Tegbareid    # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes:  http://pad.software-carpentry.org/2018-07-25-LC-Tegbareid    # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 
 ---
@@ -143,13 +143,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
   Modify the block below if there are any barriers to accessibility or
   special instructions.
-
+-->
 <p id="accessibility">
   <strong>Accessibility:</strong> We are committed to making this workshop
   accessible to everybody.
   The workshop organisers have checked that:
 </p>
-
 <ul>
   <li>The room is wheelchair / scooter accessible.</li>
   <li>Accessible restrooms are available.</li>
@@ -162,7 +161,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
--->
+
 <!--
   CONTACT EMAIL ADDRESS
 
@@ -277,8 +276,28 @@ Data Carpentry's teaching is hands-on, so participants are encouraged to bring i
 </p>
 
 -->
-<DIV>
+
  <h2> Software Setup</h2>
+
+<p>
+  To participate in a
+  {% if page.carpentry == "swc" %}
+  Software Carpentry
+  {% elsif page.carpentry == "dc" %}
+  Data Carpentry
+  {% elsif page.carpentry == "lc" %}
+  Library Carpentry
+  {% endif %}
+  workshop,
+  you will need access to the software described below.
+  In addition, you will need an up-to-date web browser.
+</p>
+<p>
+  We maintain a list of common issues that occur during installation as a reference for instructors
+  that may be useful on the
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+</p>
+<!--
  <p> 
     To participate in a Library Carpentry workshop, you will need working copies of the software described below. Please 
     make sure to install everything and try opening it to make sure it works <em>before</em> the start of your workshop. If 
@@ -294,7 +313,7 @@ Data Carpentry's teaching is hands-on, so participants are encouraged to bring i
   that may be useful on the
   <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
  </p>
-</DIV>
+-->
 
 <div id="spreadsheet"> <!-- Start of 'spreadsheet' section. -->
 
