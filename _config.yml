@@ -3,10 +3,10 @@
 #------------------------------------------------------------
 
 # Which carpentry is this ("swc", "dc", or "lc")?
-carpentry: "lc"
+carpentry: "dc"
 
 # Overall title for pages.
-title: "Sustainable Training and Education Program (STEP) in Ethiopia"
+title: "Carpentry Workshops for Instructor Candidates' Check-out"
 
 # Contact email address.
 email:  dagim.yoseph@aau.edu.et 
